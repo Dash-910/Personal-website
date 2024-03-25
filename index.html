@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/4d2badbd01.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" />
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="/about">About me</a></li>
+            <li><a href="/skills">Skills</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/certificates">Certificates</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <p>Software Engineer <i class="fa-solid fa-computer"></i></p>
+          <h1>Hi, I'm <span>Akash Tale</span><br />From Pune, India.</h1>
+        </div>
+      </div>
+    </div>
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/Photo.jpeg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About me</h1>
+            <p>
+              Hello! I'm an engineering student passionate about technology,
+              specializing in the MERN stack, Python, Java, and C++. Certified
+              in blockchain and enthusiastic about AI. I thrive on collaboration
+              and am always eager to connect with fellow tech enthusiasts. Let's
+              collaborate and make a difference together!
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  Programming Languages<br />
+                  <span class="technology">C++</span>
+                  <span class="technology">Python</span>
+                  <span class="technology">Java</span>
+                  <span class="technology">JavaScript</span>
+                </li>
+                <li>
+                  Web Development<br />
+                  <span class="technology">HTML</span>
+                  <span class="technology">CSS</span>
+                  <span class="technology">React.js</span>
+                  <span class="technology">Express.js</span>
+                  <span class="technology">node.js</span>
+                </li>
+                <li>
+                  Frameworks<br />
+                  <span class="technology">Spring</span>
+                  <span class="technology">SpringMVC</span>
+                  <span class="technology">SpringORM</span>
+                  <span class="technology">Scrapy</span>
+                </li>
+                <li>
+                  Technologies<br />
+                  <span class="technology">Git</span>
+                  <span class="technology">Docker</span>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul class="education-list">
+                <li class="education-item">
+                  <div class="degreeDuration">
+                    <div class="degree">
+                      Bachelor of Engineering (IT)<br />->CPGA: 8.10
+                    </div>
+                    <div class="duration">2020-2024</div>
+                  </div>
+                  <div class="degreeDuration">
+                    <div class="degree">
+                      Honours in Data Science<br />->CPGA: 8.30
+                    </div>
+                    <div class="duration">2022-2024</div>
+                  </div>
+                  <div class="institute">Sinhgad Institute's RMDSSOE, Pune</div>
+                </li>
+                <li class="education-item">
+                  <div class="degreeDuration">
+                    <div class="degree">HSC<br />->75.35%</div>
+                    <div class="duration">2018-2020</div>
+                  </div>
+                  <div class="institute">
+                    Shri Shivaji College of Arts Commerce and Science, Akola
+                  </div>
+                </li>
+                <li class="education-item">
+                  <div class="degreeDuration">
+                    <div class="degree">SSC<br />->88.80%</div>
+                    <div class="duration">2004-2018</div>
+                  </div>
+                  <div class="institute">
+                    Holy Cross Convent High School, Akola
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- services -->
+    <div id="profiles">
+      <div class="container">
+        <h1 class="sub-title">
+          Coding Profiles <i class="fa-solid fa-code"></i>
+        </h1>
+        <div class="profiles-list">
+          <div
+            onclick="window.open('https://auth.geeksforgeeks.org/user/akashtale910/?utm_source=geeksforgeeks&utm_medium=my_profile&utm_campaign=auth_user', '_blank');"
+          >
+            <img src="images/gfg3.png" alt="gfg" />
+            <h2>GeeksForGeeks <i class="fa-solid fa-link"></i></h2>
+            <p>Problems Solved: 472<br />CodingScore:1020</p>
+          </div>
+          <div
+            onclick="window.open('https://www.codechef.com/users/dash_8220', '_blank');"
+          >
+            <img src="images/codechef.png" alt="CodeChef" />
+            <h2>CodeChef <i class="fa-solid fa-link"></i></h2>
+            <p>Max Rating: 1557 <br />Problems Solved: 127</p>
+          </div>
+          <div
+            onclick="window.open('https://codeforces.com/profile/dash8220', '_blank');"
+          >
+            <img src="images/codeforces.png" alt="CodeForces" />
+            <h2>CodeForces <i class="fa-solid fa-link"></i></h2>
+            <p>Max Rating: 1112 <br />Problems Solved: 245</p>
+          </div>
+          <div
+            onclick="window.open('https://www.hackerrank.com/profile/akashtale910', '_blank');"
+          >
+            <img src="images/h.png" alt="HackerRank" />
+            <h2>HackerRank <i class="fa-solid fa-link"></i></h2>
+            <p>4* Java, 4*SQL, 5*JavaScript<br />5* 30DaysOfCode</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -------projects------>
+    <div class="projects">
+      <div class="container">
+        <h1 class="sub-title">Projects <i class="fa-brands fa-git-alt"></i></h1>
+        <div class="project-list">
+            <div  onclick="window.open('https://github.com/Dash-910/BytesBitesBlog', '_blank');">
+                <h2>Company Sentiment Analysis</h2>
+                <p>
+                    Developed a web scraping-based data analytics platform utilizing
+                    <b>React.js</b> for the frontend. Conducted sentiment analysis on
+                    collected data using <b>LSTM</b> and other deep learning
+                    algorithms. Provided actionable insights into market sentiment
+                    trends, aiding investors and businesses in decision-making.
+                </p>
+                <a href="#"  onclick="window.open('https://github.com/Dash-910', '_blank');">
+                    view source code <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+            
+          <div
+            onclick="window.open('https://github.com/Dash-910/BytesBitesBlog', '_blank');"
+          >
+            <h2>BytesBitesBlog</h2>
+            <p>
+              Designed and developed a blog website that offers user
+              registration, login functionality, and the ability to create and
+              read blogs. Utilized <b>React.js</b> for the responsive front-end
+              and <b>Express.js</b> for the robust back-end, with
+              <b>MongoDB</b> serving as the database for efficient data
+              management.
+            </p>
+            <a href="#"  onclick="window.open('https://github.com/Dash-910', '_blank');">
+                view source code <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+          <div
+            onclick="window.open('https://github.com/Dash-910/BytesBitesBlog', '_blank');"
+          >
+            <h2>Social Monkey</h2>
+            <p>
+              Developed a full-stack social media platform that includes user
+              registration, authentication, post management (CRUD), post
+              interaction, and real-time chat functionality. Utilized
+              <b>React.js</b>, <b>Express.js</b>, Socket.io, and
+              <b>MongoDB</b> for seamless user experiences and data management.
+            </p>
+            <a href="#"  onclick="window.open('https://github.com/Dash-910', '_blank');">
+                view source code <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+          <div
+            onclick="window.open('https://github.com/Dash-910/BytesBitesBlog', '_blank');"
+          >
+            <h2>Product management System</h2>
+            <p>
+              Developed a Java-based web application using Servlets,<b>JDBC</b>,
+              and
+              <b>JSP</b> for efficient product management. The application
+              enables CRUD operations on a <b>MySQL</b> database, providing a
+              seamless and user-friendly interface for managing product data
+            </p>
+            <a href="#"  onclick="window.open('https://github.com/Dash-910', '_blank');">
+                view source code <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+          <div
+            onclick="window.open('https://github.com/Dash-910/BytesBitesBlog', '_blank');"
+          >
+            <h2>Monkey Notes</h2>
+            <p>
+              Designed and developed an intuitive Personal NoteBook with user
+              authentication. This web application allows users to seamlessly
+              CRUD their notes, which are stored in MongoDB for data
+              persistence. The front-end is built using React.js with Bootstrap,
+              and the back-end by Express.js.
+            </p>
+            <a href="#"  onclick="window.open('https://github.com/Dash-910', '_blank');">
+                view source code <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- certificates -->
+    <div class="certificates">
+      <div class="container">
+        <h1 class="sub-title">
+          Certificates <i class="fa-solid fa-certificate"></i>
+        </h1>
+        <div class="certificates-list">
+          <div
+            onclick="window.open('https://drive.google.com/file/d/1SYtONxdt5Wyd0KJ8ik8i5EaSLRRBvkt-/view','_blank');"
+          >
+            <h2>NPTEL Online Certification</h2>
+            <p>
+              Aggregate: 55.0/100.0<br />
+              Subject: Design and Analysis of Algorithms
+            </p>
+            <p>Key Skills: Data Structures, Algorithms, Dynamic Programming</p>
+            <p>
+              This certification course covers fundamental concepts, techniques,
+              and tools for designing and analyzing efficient algorithms.
+              Participants gain practical experience through weekly assignments
+              and an online exam over eight weeks.
+            </p>
+            <a>view certificate</a>
+          </div>
+          <div
+            onclick="window.open('https://drive.google.com/file/d/1SYtONxdt5Wyd0KJ8ik8i5EaSLRRBvkt-/view','_blank');"
+          >
+            <h2>NPTEL Online Certification</h2>
+            <p>
+              Aggregate: 69.0/100.0<br />
+              Subject: Blockchain and its Applications
+            </p>
+            <p>Key Skills: Data Structures, Algorithms, cyrptography</p>
+            <p>
+              This course on "Blockchain and its Applications" is a 12-week
+              program covering blockchain fundamentals, cryptography, platforms
+              like Bitcoin and Ethereum, smart contracts, and real-world use
+              cases. Participants gain a solid understanding of blockchain
+              technology's potential applications across industries.
+            </p>
+            <a>view certificate</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+  </body>
+</html>
