@@ -15,14 +15,16 @@
       <div class="container">
         <nav>
           <img src="images/logo.png" class="logo" />
-          <ul>
+          <ul id="sidemenu">
             <li><a href="#">Home</a></li>
             <li><a href="/about">About me</a></li>
             <li><a href="/skills">Skills</a></li>
             <li><a href="/projects">Projects</a></li>
             <li><a href="/certificates">Certificates</a></li>
             <li><a href="/contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
           </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
           <p>Software Engineer <i class="fa-solid fa-computer"></i></p>
@@ -271,7 +273,7 @@
               Participants gain practical experience through weekly assignments
               and an online exam over eight weeks.
             </p>
-            <a>view certificate</a>
+            <a>view certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
           </div>
           <div
             onclick="window.open('https://drive.google.com/file/d/1SYtONxdt5Wyd0KJ8ik8i5EaSLRRBvkt-/view','_blank');"
@@ -289,7 +291,7 @@
               cases. Participants gain a solid understanding of blockchain
               technology's potential applications across industries.
             </p>
-            <a>view certificate</a>
+            <a>view certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
           </div>
         </div>
       </div>
@@ -311,12 +313,12 @@
                     </div>
                 </div>
                 <div class="contact-right">
-                    <a href="/images/Resume2.0.pdf" download class="btn btn2">Download CV</a>
+                    <a href="/images/Resume2.0.pdf" download class="btn btn2">Download CV <i class="fa-solid fa-download"></i></a>
                 </div>
             </div>
         </div>
     </div>
-
+    
     <script>
       var tablinks = document.getElementsByClassName("tab-links");
       var tabcontents = document.getElementsByClassName("tab-contents");
@@ -331,6 +333,15 @@
 
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
+      }
+
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu(){
+        sidemenu.style.right="0";
+      }
+      function closemenu(){
+        sidemenu.style.right="-200px";
       }
     </script>
   </body>
