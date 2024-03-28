@@ -4,6 +4,9 @@
     font-family:'Poppins',sans-serif;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     /* background-color: #080808; */
@@ -26,8 +29,15 @@ body{
 nav{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap : wrap;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #0c0c0c;
+
 }
 .logo{
     width:140px;
@@ -61,7 +71,7 @@ nav ul li a:hover::after{
 }
 
 .header-text{
-    margin-top : 20%;
+    margin-top : 26%;
     font-size : 25px;
     margin-bottom: 7%;
 }
@@ -240,7 +250,7 @@ nav ul li a:hover::after{
 
 /* projects */
 
-.projects{
+#projects{
     padding:30px 0;
 }
 
@@ -296,7 +306,7 @@ color:green
 
 /* certificates */
 
-.certificates{
+#certificates{
     padding:30px 0;
 }
 
@@ -472,5 +482,12 @@ nav .fa-solid{
     .profiles-list div h2{
         font-size:23px;
     }
-    
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap : wrap;
+        background-color: rgb(21, 17, 17);
+    }
+
 }
